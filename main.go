@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"runtime"
+
+	"github.com/godesde0/ejercicio"
 )
 
 func main() {
 	/*estado, texto := variables.ConviertoTexto(2345)
 	fmt.Println(estado)
-	fmt.Println(texto)*/
+	fmt.Println(texto)
 
 	if os := runtime.GOOS; os == "linux" || os == "Mac" {
 		fmt.Println("Este sistema no es", os)
@@ -24,5 +25,9 @@ func main() {
 	default:
 		fmt.Println("Este si es", os)
 	}
+	*/
+	numero, texto := ejercicio.Ejercicio01("iiogol")
+	fmt.Println(numero)
+	fmt.Println(texto)
 
 }
