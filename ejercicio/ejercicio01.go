@@ -6,7 +6,7 @@ func Ejercicio01(texto string) (int, string) {
 	num, err := strconv.Atoi(texto)
 
 	if err != nil {
-		return 0, "Error al convertir el texto"
+		return 0, "Error al convertir el texto" + err.Error()
 	}
 	if num > 100 {
 		return num, "El numero es mayor a 100"

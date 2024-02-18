@@ -3,17 +3,17 @@ package main
 import (
 	"fmt"
 
-	"github.com/godesde0/variables"
+	"github.com/godesde0/ejercicio"
 )
 
 func main() {
 	//variables.MuestroEnteros()
-
-	variables.RestoVariables()
-	estado, texto := variables.ConviertoaTexto(2345)
-	fmt.Println(estado)
-	fmt.Println(texto)
 	/*
+		variables.RestoVariables()
+		estado, texto := variables.ConviertoaTexto(2345)
+		fmt.Println(estado)
+		fmt.Println(texto)
+
 		if os := runtime.GOOS; os == "linux" || os == "Mac" {
 			fmt.Println("Este sistema no es", os)
 		} else {
@@ -26,22 +26,11 @@ func main() {
 		case "Mac":
 			fmt.Println("Este sistema no es", os, "esto es Mac")
 		default:
-			fmt.Println("Este si es", os)
+			fmt.Printf("%s \n", os)
 		}
-
-		numero, texto := ejercicio.Ejercicio01("iiogol")
-		fmt.Println(numero)
-		fmt.Println(texto)
-
-		sum := sum(os.Args[1], os.Args[2])
-		fmt.Println("Sum:", sum)
 	*/
-}
+	numero, texto := ejercicio.Ejercicio01("90")
+	fmt.Println(numero)
+	fmt.Println(texto)
 
-/*
-func sum(number1 string, number2 string) int {
-	int1, _ := strconv.Atoi(number1)
-	int2, _ := strconv.Atoi(number2)
-	return int1 + int2
 }
-*/
